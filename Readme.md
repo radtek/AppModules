@@ -1,0 +1,1 @@
+My very old and naive home experiments with building modular pluggin app like Wpf+Prism but for WinForms.
