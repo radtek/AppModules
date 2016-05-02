@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+ <head>
+  <title>Testing</title>
+   <style type="text/css">
+     .label { width: 7em; padding-right: 1.5em; display: inline-block; text-align: right; vertical-align: top }
+     .input { display: inline-block }
+     .submit { text-align: center }
+     body { margin: 0 }
+     form { line-height: 1; margin: 0.5cm 0.5cm }
+     h1 { margin: 0 }
+     textarea	{ width: auto }
+   </style>
+ </head>
+ <body>
+ <form action="simpleAction">
+ <h1>Survey</h1>
+   <p>
+     <label class="label" for="name">Your name:</label>
+     <input type="text"  maxlength="30" size="30" name="name" id="name" />
+   </p>
+   <p>
+     <span class="label">I think this guide is:</span>
+     <span class="input">
+       <label>
+         <input type="radio" name="quality" value="great"/> Great
+       </label>
+       <br/>
+       <label>
+         <input type="radio" name="quality" value="middling"/> Middling
+       </label>
+       <br/>
+       <label>
+         <input type="radio" name="quality" value="bad"/> Very poor
+       </label>
+     </span>
+   </p>
+   <p>
+     <label class="label" for="email">Email address:</label>
+     <input type="text"  maxlength="30" size="30" name="email" id="email" />
+   </p>
+   <p>
+     <label class="label" for="comments">Comments:</label>
+     <textarea rows="5" cols="30" name="comments" id="comments" ></textarea>
+   </p>
+   <p>
+     <label class="label" for="comments">Subscribe to newletter:</label>
+     <input type="checkbox"  name="subscribe" value="subscribe" id="subscribe"/>
+   </p>
+   <p>
+     <label class="label" for="location">Your location:</label>
+     <select name="location" id="location">
+       <option value="africa">Africa</option>
+       <option value="america">America</option>
+       <option value="asia">Asia</option>
+       <option value="europe">Europe</option>
+       <option value="oceania">Oceania</option>
+       <option value="other">Other</option>
+     </select>
+   </p>
+ <p><input type="submit" name="submit" value="Submit it!" /></p>
+ </form>
+ </body>
+ </html>

@@ -1,0 +1,33 @@
+The ModelText HTML edit control (version 1.2) is released under the license whose text is shown below. 
+
+---
+
+Copyright 2008-2010, Christopher Wells <info@modeltext.com> ("Licensor")
+
+** Free evaluation **
+
+You may download and distribute copies of this control, for evaluation purposes, without a license. "Evaluation purposes" means that the control is mostly being used by software developers not end users, and that you are not using the control to create valuable data, which you then store or use for other purposes.
+
+** Purchase a License **
+
+Permission to use, copy, and/or distribute this software, for any purpose other than to evaluate it, is granted if and when you purchase a license from the copyright holder.
+
+The license is per application (to use the control within a specific application): it is not per developer 
+(if you have several developers on the same application, you don't need a separate license for each developer), 
+and not per end user.
+
+** Use in a Specific Application **
+
+When you purchase a license, you will identify the application in which you intend to use the control. You may not redistribute the control to other software developers, in order for them to use the control in their unlicensed applications. 
+
+** No Modifications **
+
+This is closed source, proprietary software. The software's source code (except for some sample code) has not been released. Although permission is hereby granted to write software which uses this software component, and to use this software as a component within other software, permission is not granted to modify this software component, nor to use or distribute modified copies. 
+
+** No Waranties **
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE LICENSOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. 
+
+** Limitation of Liability **
+
+IN NO EVENT SHALL THE LICENSOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE. 

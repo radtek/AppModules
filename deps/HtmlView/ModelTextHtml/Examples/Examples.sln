@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileOpenAndSave", "FileOpenAndSave\FileOpenAndSave.csproj", "{887DAD70-DC28-4B72-9C70-F1D4D057875C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormControls", "FormControls\FormControls.csproj", "{756EE4E1-BB4A-4F06-B790-0D917566F576}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{887DAD70-DC28-4B72-9C70-F1D4D057875C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{887DAD70-DC28-4B72-9C70-F1D4D057875C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{887DAD70-DC28-4B72-9C70-F1D4D057875C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{887DAD70-DC28-4B72-9C70-F1D4D057875C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{756EE4E1-BB4A-4F06-B790-0D917566F576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{756EE4E1-BB4A-4F06-B790-0D917566F576}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{756EE4E1-BB4A-4F06-B790-0D917566F576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{756EE4E1-BB4A-4F06-B790-0D917566F576}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

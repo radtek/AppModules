@@ -1,0 +1,51 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Core.OracleModule.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="LoadCommand" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Test_pkg.LoadSettings</Value>
+    </Setting>
+    <Setting Name="SaveCommand" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Test_pkg.SaveSettings</Value>
+    </Setting>
+    <Setting Name="UsernameParam" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">p_username</Value>
+    </Setting>
+    <Setting Name="SectionParam" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">p_section</Value>
+    </Setting>
+    <Setting Name="SubSectionParam" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">p_subsection</Value>
+    </Setting>
+    <Setting Name="SettingNameParam" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">p_settingName</Value>
+    </Setting>
+    <Setting Name="SettingValueParam" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">p_settingValue</Value>
+    </Setting>
+    <Setting Name="SettingCursorParam" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">p_setiingCursor</Value>
+    </Setting>
+    <Setting Name="SettingValueCLOBParam" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">p_settingCLOBValue</Value>
+    </Setting>
+    <Setting Name="SettingValueBLOBParam" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">p_settingBLOBValue</Value>
+    </Setting>
+    <Setting Name="SettingNameColumn" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">name</Value>
+    </Setting>
+    <Setting Name="SettingValueColumn" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">value</Value>
+    </Setting>
+    <Setting Name="SettingValueCLOBColumn" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CLOBvalue</Value>
+    </Setting>
+    <Setting Name="SettingValueBLOBColumn" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">BLOBvalue</Value>
+    </Setting>
+    <Setting Name="ClearCommand" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Test_pkg.ClearSettings</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

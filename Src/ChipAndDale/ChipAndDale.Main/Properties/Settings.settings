@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ChipAndDale.Main.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DbUser" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">chipanddale</Value>
+    </Setting>
+    <Setting Name="DbPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">chipanddale</Value>
+    </Setting>
+    <Setting Name="DbAliase" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">xe</Value>
+    </Setting>
+    <Setting Name="ModuleName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ChipAndDale</Value>
+    </Setting>
+    <Setting Name="OraPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ODAC11\</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

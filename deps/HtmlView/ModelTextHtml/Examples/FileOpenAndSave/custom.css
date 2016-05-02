@@ -1,0 +1,75 @@
+﻿/*
+This file contains CSS rules which customize
+the appearance of the HTML which is displayed.
+You may alter the contents of this file.
+*/
+
+td { border-style: solid; border-width: thin; padding: 0.5em 1em }
+
+body,
+form	{ margin: 0 1.5em 1em; line-height: 1.33;
+		  font-size: 11pt;
+		  font-family: Calibri, Verdana, sans-serif;
+		  padding: 0 }
+		  
+/* override the too-large 1.33em margin specified in defaults.css */
+		  
+P, BLOCKQUOTE, UL,
+FIELDSET,
+OL, DL, DIR,
+MENU            { margin: 1em 0 }
+
+OL, UL, DIR,
+MENU, DD        { margin-left: 3em }
+
+DT        { margin-left: 1.5em; font-weight: bold }
+
+LI      { margin: 0.25em 0 }
+
+/* some settings for O/S-specific form controls */
+
+textarea,
+select,
+input,
+input[type="text"]	{ border-style: solid; border-width: thin; padding: 1px 2px }
+
+ul.simple	{ list-style-type: none }
+
+textarea	{ width: 100% }
+
+h1, h2, h3, h4, h5, h6
+{ font-family: Cambria, "Times New Roman", serif; color: red }
+
+h1
+{ font-weight: bold; font-size: 14pt; }
+
+h2
+{ font-weight: bold; font-size: 13pt; }
+
+h3
+{ font-weight: bold; font-size: 11pt; }
+
+h4
+{ font-weight: bold; font-size: 11pt; font-style: italic }
+
+h6
+{ font-style: italic }
+
+/*
+show various non-standard background colors
+ugly but a demonstration of how well they're painted
+*/
+
+body { background-color: fuchsia; }
+p { background-color: #ffff80; }
+a { background-color: silver; }
+tr { background-color: aqua; }
+td { background-color: silver; }
+ul { background-color: #80ff80; }
+
+/*
+ensure that the selection always looks highlighted, i.e. that
+it overrides all the default background colors
+*/
+
+:selection      { background-color: Highlight !important; color: HighlightText; }

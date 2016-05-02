@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C5D1EB94-59C7-4D0A-AD22-7494CF7236A6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Core.SDK</RootNamespace>
+    <AssemblyName>Core.SDK</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugPluggin|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DebugPluggin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\SDK.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\ExtensionMethods.cs" />
+    <Compile Include="Common\Tuple.cs" />
+    <Compile Include="Composite\Event\EventMessageBase.cs" />
+    <Compile Include="Composite\Event\EventMessage\DbCommandExecutedMessage.cs" />
+    <Compile Include="Composite\Event\EventMessage\DbTransactionFinishMessage.cs" />
+    <Compile Include="Composite\Event\EventMessage\DbEvent.cs" />
+    <Compile Include="Composite\Event\EventMessage\DbConnectionChangedMessage.cs" />
+    <Compile Include="Composite\UI\ICommandRegion.cs" />
+    <Compile Include="Composite\UI\IDialogResult.cs" />
+    <Compile Include="Composite\UI\IMessageBoxMgr.cs" />
+    <Compile Include="Composite\UI\Impl\RegionMgr.cs" />
+    <Compile Include="Composite\UI\Impl\ViewBase.cs" />
+    <Compile Include="Composite\UI\IViewRegion.cs" />
+    <Compile Include="Composite\UI\ViewDockingState.cs" />
+    <Compile Include="Dom\BindingCollection.cs" />
+    <Compile Include="Common\Delegates.cs" />
+    <Compile Include="Common\UIMessage.cs" />
+    <Compile Include="Composite\Pluggin\IPluggin.cs" />
+    <Compile Include="Composite\Pluggin\IPlugginMgr.cs" />
+    <Compile Include="Composite\Pluggin\PlugginBase.cs" />
+    <Compile Include="Composite\Service\IServiceMgr.cs" />
+    <Compile Include="Composite\Service\ServiceMgr.cs" />
+    <Compile Include="Composite\Service\ServiceMgrImplBase.cs" />
+    <Compile Include="Composite\UI\Impl\Command.cs" />
+    <Compile Include="Composite\UI\Impl\CommandInvokerBase.cs" />
+    <Compile Include="Composite\UI\CommonRegionName.cs" />
+    <Compile Include="Composite\UI\DialogFormOptions.cs" />
+    <Compile Include="Composite\UI\ICommand.cs" />
+    <Compile Include="Composite\UI\ICommandInvoker.cs" />
+    <Compile Include="Composite\UI\IViewFormMgr.cs" />
+    <Compile Include="Composite\UI\IRegion.cs" />
+    <Compile Include="Composite\UI\IRegionMgr.cs" />
+    <Compile Include="Composite\UI\IUIMgr.cs" />
+    <Compile Include="Composite\UI\IView.cs" />
+    <Compile Include="Composite\UI\Impl\View.cs" />
+    <Compile Include="Composite\UI\ViewSetting.cs" />
+    <Compile Include="Db\DbExceptions.cs" />
+    <Compile Include="Db\DbTransaction.cs" />
+    <Compile Include="Db\IDbCommand.cs" />
+    <Compile Include="Db\IDbConnection.cs" />
+    <Compile Include="Db\IDbManager.cs" />
+    <Compile Include="Db\IDbParam.cs" />
+    <Compile Include="Composite\Event\BackGroundEventSubscription.cs" />
+    <Compile Include="Composite\Event\CompositeEvent.cs" />
+    <Compile Include="Common\DelegateReference.cs" />
+    <Compile Include="Composite\Event\DispatcherSubscriptionEvent.cs" />
+    <Compile Include="Composite\Event\EventBase.cs" />
+    <Compile Include="Composite\Event\EventMgr.cs" />
+    <Compile Include="Composite\Event\EventSubscription.cs" />
+    <Compile Include="Common\IDelegateReference.cs" />
+    <Compile Include="Composite\Event\IEventMgr.cs" />
+    <Compile Include="Composite\Event\IEventSubscription.cs" />
+    <Compile Include="Common\IdentKey.cs" />
+    <Compile Include="Composite\Event\ThreadOption.cs" />
+    <Compile Include="Dom\EntityBase.cs" />
+    <Compile Include="Dom\EntityComparer.cs" />
+    <Compile Include="Dom\EntityList.cs" />
+    <Compile Include="Interface\IDeepClonable.cs" />
+    <Compile Include="Dom\IEntity.cs" />
+    <Compile Include="Dom\IEntityList.cs" />
+    <Compile Include="Interface\IFullEquatable.cs" />
+    <Compile Include="Log\ILogger.cs" />
+    <Compile Include="Log\ILogMgr.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Setting\Attributes\SettingAttribute.cs" />
+    <Compile Include="Setting\ISettingReadWriter.cs" />
+    <Compile Include="Setting\ISettingMgr.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

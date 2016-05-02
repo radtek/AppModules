@@ -1,0 +1,511 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8744B844-95A5-4923-BBFB-E634238DC4FC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Core.XtraCompositeModule</RootNamespace>
+    <AssemblyName>Core.XtraCompositeModule</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugPluggin|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DebugPluggin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\XtraCompositeModule.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormMgr\MessageBoxMgr.cs" />
+    <Compile Include="FormMgr\MessageDialogForm.cs" />
+    <Compile Include="FormMgr\MessageDialogForm.Designer.cs">
+      <DependentUpon>MessageDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenuCommandRegionDecorator.cs" />
+    <Compile Include="StatusBarRegion.cs" />
+    <Compile Include="SubMenuCommandRegionDecorator.cs" />
+    <Compile Include="BarItemInvoker.cs" />
+    <Compile Include="CheckedBarItemInvoker.cs" />
+    <Compile Include="Controls\SelectableLabel.cs" />
+    <Compile Include="FormMgr\ViewFormMgr.cs" />
+    <Compile Include="FormMgr\FormBase.cs" />
+    <Compile Include="FormMgr\FormBase.Designer.cs">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMgr\MessageForm.cs" />
+    <Compile Include="FormMgr\MessageForm.Designer.cs">
+      <DependentUpon>MessageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMgr\MessageFormWithDetail.cs" />
+    <Compile Include="FormMgr\MessageFormWithDetail.Designer.cs">
+      <DependentUpon>MessageFormWithDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DockingViewRegion.cs" />
+    <Compile Include="FormMgr\StatusBarButtonController.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\EnumFormatter.cs" />
+    <Compile Include="ViewRegionBase.cs" />
+    <Compile Include="DocumentViewRegion.cs" />
+    <Compile Include="ItemFactory.cs" />
+    <Compile Include="BarCommandRegion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core.SDK\Core.SDK.csproj">
+      <Project>{C5D1EB94-59C7-4D0A-AD22-7494CF7236A6}</Project>
+      <Name>Core.SDK</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core.UtilsModule\Core.UtilsModule.csproj">
+      <Project>{FADAC4FC-A764-4569-AE68-70AA1B7A9DAF}</Project>
+      <Name>Core.UtilsModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormMgr\MessageDialogForm.resx">
+      <DependentUpon>MessageDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMgr\FormBase.resx">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMgr\MessageForm.resx">
+      <DependentUpon>MessageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMgr\MessageFormWithDetail.resx">
+      <DependentUpon>MessageFormWithDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-to-favorites_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alarm_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alert_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attached_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\block_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\block_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\block_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alert_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alert_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-flag_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bold_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\burning_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_blue_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_eject_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_eject2_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_fast_forward_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_fast_forward2_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_next_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_next2_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_pause_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_pause2_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_play_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_play2_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_previous_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_previous2_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_red_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_rewind_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_rewind2_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_stop_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_stop2_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cascade_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cd_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cd-burn_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer_off_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer_on_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer-ok_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\config_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contacts_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dialog_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-document_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\export_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favorites_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-close_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-open_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green-flag_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hd_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horizontal_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\import_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internet_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\italic_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\large-icons_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notes_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open-document_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open-folder_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock-close_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock-open_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quote_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red-flag_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\running_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save-as_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\script_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\script-add_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\script-delete_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show_info_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show_info_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show_info_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\small-icons_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\software_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tasks_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\themes_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash-full_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vertical_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view-_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view+_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wizard_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow-flag_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\applications.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
